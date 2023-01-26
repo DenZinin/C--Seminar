@@ -35,7 +35,7 @@ int[] CreatArray(int elements)
     return array;
 }
 
-void ShowArray(int[] array)
+void ShowArray(int[] array)                       // Вывод массива в консоль
 {
     for (int j = 0; j < array.Length; j++)
     {
