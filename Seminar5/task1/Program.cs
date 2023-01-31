@@ -2,9 +2,15 @@
 // которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int[] GenerateArray(int len = 2)
+int NumberOfElemets(string message)
 {
-    int[] array = new int[len];
+    Console.Write($"{message}: ");
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int[] GenerateArray(int userinput)
+{
+    int[] array = new int[userinput];
     Random rnd = new Random();
     for (int i = 0; i < array.Length; i++)
     {
@@ -35,7 +41,8 @@ int EvenNumbers(int[] array)
     return count;
 }
 
-int[] array = GenerateArray();
+int userinput = NumberOfElemets("Задайте длинну массива: ");
+int[] array = GenerateArray(userinput);
 PrintArray(array);
 int evenumber = EvenNumbers(array);
 System.Console.WriteLine($"Количество четных чисел равно - {evenumber}");
