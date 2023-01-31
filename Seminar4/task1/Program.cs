@@ -15,7 +15,7 @@ double usernumber2 = Prompt("Введите второе число");
 double DegreeNumber(double usernumber1, double usernumber2)
 {
     double x = 1;
-    for (double i = 1; i <= usernumber2; i++);
+    for (double i = 1; i <= usernumber2; i++)
     {
         double result = Math.Pow(usernumber1, usernumber2);
         System.Console.WriteLine(result);
